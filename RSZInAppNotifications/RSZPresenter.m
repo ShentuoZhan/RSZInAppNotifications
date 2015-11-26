@@ -110,7 +110,7 @@ void *const kPresenterNotificationQueueKey = "_notificationQueue";
         [collisionBoundsView addSubview:associatedView];
 
         notification.isBeingPresented = YES;
-        [UIApplication hideStatusBar];
+        //[UIApplication hideStatusBar];
 
         [[self window] addSubview:collisionBoundsView];
         [self resetAnimatorForAssociatedView:associatedView collisionBoundsView:collisionBoundsView];
@@ -149,7 +149,7 @@ void *const kPresenterNotificationQueueKey = "_notificationQueue";
                              [[self collisionBoundsView]removeFromSuperview];
                              [self setCollisionBoundsView:nil];
 
-                             [UIApplication showStatusBar];
+                             //[UIApplication showStatusBar];
 
                              if (completion) {
                                  completion(finished, NO);
