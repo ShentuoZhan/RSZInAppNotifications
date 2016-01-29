@@ -39,7 +39,8 @@ const char * kNotificationOperationKey = "notificationOperation";
 {
     _finished = NO;
     self.cancelableBlock = self.mainBlock(&_finished);
-    while (!_finished) {}
+    while (!_finished && ![self isCancelled]) {
+    }
 }
 
 - (void)cancel

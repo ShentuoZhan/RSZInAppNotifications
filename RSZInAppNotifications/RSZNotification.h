@@ -15,4 +15,6 @@ typedef void(^on_tap_block_t)(RSZNotification *notification);
 
 + (instancetype)notificationWithAssociatedView:(UIView *)view onTapBlock:(on_tap_block_t)onTapBlock;
 
+- (void)cancelOperation;
+
 @end

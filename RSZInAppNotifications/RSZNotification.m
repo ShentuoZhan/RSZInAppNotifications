@@ -72,4 +72,11 @@ extern const char * kNotificationOperationKey;
     }
 }
 
+- (void)cancelOperation
+{
+    RSZNotificationOperation *operation = objc_getAssociatedObject(self, kNotificationOperationKey);
+    [operation cancel];
+}
+
+
 @end
