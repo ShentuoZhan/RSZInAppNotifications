@@ -262,9 +262,9 @@ void *const kPresenterNotificationQueueKey = "_notificationQueue";
 
 + (void)setCollisionBoundsView:(UIView *)view
 {
-    if (![self collisionBoundsView]) {
+    //if (![self collisionBoundsView]) {
         objc_setAssociatedObject(self, kCollisionBoundsViewKey, view, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    }
+   // }
 }
 
 + (void)setAnimator:(UIDynamicAnimator *)animator
